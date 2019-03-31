@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Organized Drawer</string>
+    <string name="menu_addFolder">Add Folder</string>
+    <string name="menu_refresh">Refresh</string>
+	<string name="menu_preferences">Preferences</string>
+	<string name="menu_batch_move">Batch move</string>
+	<string name="pref_cat_backup">Backup</string>
+	<string name="pref_cat_background">Background..</string>
+	<string name="pref_cat_theme">Icon pack</string>
+	<string name="pref_theme">Icon pack</string>
+	<string name="pref_backup">Backup</string>
+	<string name="pref_restore">Restore</string>
+	<string name="pref_backgroundtype">Background type</string>
+	<string name="pref_backgrounddimming">Background dimming</string>
+	<string name="backing_up">Backing up</string>
+	<string name="restoring">Restoring</string>
+	<string name="title">Title</string>
+	<string name="confirm">Ok</string>
+	<string name="ok">Ok</string>
+	<string name="up">Up</string>
+	<string name="edit_folder">Edit folder</string>
+	<string name="select_folder">Select folder</string>
+	<string name="hide_app">Hide app</string>
+	<string name="unhide_app">Unhide app</string>
+	<string name="show_hidden">Show hidden apps</string>
+	<string name="cancel_batch_move">Cancel batch move</string>
+	<string name="delete_folder">Delete folder</string>
+	<string name="edit_app">Edit app</string>
+	<string name="add_shortcut">Add to homescreen</string>
+	<string name="open_market">Open market</string>
+	<string name="refreshing_apps">Refreshing apps.</string>
+	<string name="updating_cache">Updating cache.</string>
+	<string name="defaultIcon">Default icon.</string>
+	<string name="sure_delete_folder">Are you sure you want to delete this folder?</string>
+	<string name="sure_hide_app">Are you sure you want to hide this app?</string>
+	<string name="use_this_icon">Do you want to use this icon?</string>
+	<string name="restore_this">Do you want to restore with this file?</string>
+	<string name="fixing_problems">Fixing problems...</string>
+	<string name="yes">Yes</string>
+	<string name="no">No</string>
+	<string-array name="background_types">
+		<item>solid</item>
+		<item>wallpaper</item>
+	</string-array>
+</resources>

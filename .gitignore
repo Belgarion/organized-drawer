@@ -1,0 +1,9 @@
+build/
+app/release/
+app/debug/
+hs_err*.log
+replay*.log
+hs_err*.mdmp
+*.bin
+*.lock
+local.properties

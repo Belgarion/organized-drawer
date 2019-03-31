@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:orientation="vertical"
+	android:minHeight="?android:attr/listPreferredItemHeight">
+
+
+	<ImageView android:id="@+id/appIcon"
+		android:layout_width="@android:dimen/app_icon_size"
+		android:layout_height="@android:dimen/app_icon_size"
+		android:layout_gravity="center"
+		android:scaleType="fitCenter"
+		android:focusable="false"
+	/>
+
+</LinearLayout>
+

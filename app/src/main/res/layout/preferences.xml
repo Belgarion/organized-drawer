@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+	android:key="main_preferencescreen">
+	<se.brokenbrain.drawer.SliderPreference
+		android:key="portraitColumns"
+		android:title="Number of columns"
+		android:summary="Portrait mode (0 for auto)"
+		android:defaultValue="0"
+		android:text=""
+		android:dialogTitle="Portrait columns"
+		android:max="20" />
+	<se.brokenbrain.drawer.SliderPreference
+		android:key="landscapeColumns"
+		android:title="Number of columns"
+		android:defaultValue="0"
+		android:text=""
+		android:max="20"
+		android:numeric="integer"
+		android:dialogTitle="Landscape columns"
+		android:summary="Landscape mode (0 for auto)"/>
+	<CheckBoxPreference
+		android:key="foldersFirst"
+		android:title="Show folders first" />
+	<CheckBoxPreference
+		android:key="hideLabels"
+		android:title="Hide app labels" />
+	<CheckBoxPreference
+		android:key="hideFolderLabels"
+		android:title="Hide folder labels" />
+	<CheckBoxPreference
+		android:key="fullscreen"
+		android:title="Fullscreen" />
+	<CheckBoxPreference
+		android:key="closeOnLaunch"
+		android:title="Close after launch"
+		android:summary="Close drawer after launching app" />
+	<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+		android:key="background_preferencescreen" android:title="@string/pref_cat_background">
+		<ListPreference
+			android:key="backgroundType"
+			android:title="@string/pref_backgroundtype"
+			android:entries="@array/background_types"
+			android:entryValues="@array/background_types"
+			android:dialogTitle="Select background type"
+			android:defaultValue="solid" />
+		<se.brokenbrain.drawer.SliderPreference
+			android:key="backgroundDimming"
+			android:title="@string/pref_backgrounddimming"
+			android:defaultValue="50"
+			android:text="%"
+			android:max="100" />
+		<com.commonsware.cwac.colormixer.ColorPreference
+			android:key="backgroundColor"
+			android:defaultValue="0xFF000000"
+			android:title="Solid background color" />
+	<!--<com.commonsware.cwac.colormixer.ColorPreference
+			android:key="backgroundDimmingColor"
+			android:defaultValue="0xFF000000"
+			android:title="Dim color" />-->
+	</PreferenceScreen>
+	<com.commonsware.cwac.colormixer.ColorPreference
+			android:key="textColor"
+			android:defaultValue="0xFFFFFFFF"
+			android:title="Text color" />
+	<PreferenceCategory android:title="@string/pref_cat_theme">
+		<CheckBoxPreference
+			android:key="useTheme"
+			android:title="Use icon pack" />
+		<se.brokenbrain.drawer.ThemeListPreference
+			android:key="themeName"
+			android:title="@string/pref_theme"
+			android:defaultValue="null" />
+	</PreferenceCategory>
+	<PreferenceCategory android:title="@string/pref_cat_backup">
+		<PreferenceScreen android:title="@string/pref_backup">
+			<intent
+				android:action="android.intent.action.MAIN"
+				android:targetPackage="se.brokenbrain.drawer"
+				android:targetClass="se.brokenbrain.drawer.Backup" />
+		</PreferenceScreen>
+		<PreferenceScreen android:title="@string/pref_restore">
+			<intent
+				android:action="android.intent.action.MAIN"
+				android:targetPackage="se.brokenbrain.drawer"
+				android:targetClass="se.brokenbrain.drawer.Restore" />
+		</PreferenceScreen>
+	</PreferenceCategory>
+
+</PreferenceScreen>
